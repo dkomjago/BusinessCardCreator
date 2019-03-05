@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs
+/BusinessCardCreator/bin/Release/netcoreapp2.1
+/BusinessCardCreator/bin/Debug/netcoreapp2.1
+/BusinessCardCreator/obj
+/BusinessCardCreator.sln
+/BusinessCardCreator/appsettings.Development.json

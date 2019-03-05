@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Create";
+}
+@model BusinessCardCreator.Models.UserData
+
+<form asp-action="Result" method="post" enctype="multipart/form-data">
+    <div class="container">
+        <table align="left">
+            <tr>
+                <td>First name:</td>
+                <td>
+                    <input asp-for="FirstName" type="text" maxlength="30" placeholder="Name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Last name:</td>
+                <td>
+                    <input asp-for="LastName" type="text" maxlength="60" placeholder="Surname" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Position:</td>
+                <td>
+                    <input asp-for="Position" type="text" maxlength="60" placeholder="Example Manager" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input asp-for="Email" type="email" placeholder="example@example.com" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Tel.:</td>
+                <td>
+                    <input asp-for="Phone" type="tel" placeholder="+1234567890" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Web Page:</td>
+                <td>
+                    <input asp-for="Link" type="url" placeholder="http://example.com" required>
+                </td>
+            </tr>
+            <tr>
+                <td> Company:</td>
+                <td>
+                    <input asp-for="Company" type="text" placeholder="Example Inc.">
+                </td>
+            </tr>
+            <tr>
+                <td>Company Logo:</td>
+                <td><input asp-for="CompanyLogo" type="file" accept="image/*"></td>
+            </tr>
+            <tr><td> <input type="submit" value="Submit"></td></tr>
+        </table>
+    </div>
+</form>

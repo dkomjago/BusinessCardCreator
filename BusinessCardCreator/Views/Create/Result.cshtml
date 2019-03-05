@@ -1,0 +1,22 @@
+﻿
+@using System.IO
+@{
+    ViewData["Title"] = "Your card";
+}
+@model BusinessCardCreator.Models.UserData
+
+<div>
+    <input asp-for="FirstName" type="hidden">
+    <input asp-for="LastName" type="hidden">
+    <input asp-for="Position" type="hidden">
+    <input asp-for="Email" type="hidden">
+    <input asp-for="Phone" type="hidden">
+    <input asp-for="Link" type="hidden">
+    <input asp-for="Company" type="hidden">
+    <input asp-for="CompanyLogoString" type="hidden">
+</div>
+
+<canvas id="card" width="400" height="200"></canvas>
+<br />
+<a id="download">Download</a>
+<script src="~/js/result.js"></script>
